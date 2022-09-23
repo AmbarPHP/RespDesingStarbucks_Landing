@@ -1,10 +1,10 @@
-
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import New from "./pages/New";
 import Contact from "./pages/Contact";
+import logo from "./assets/logo.png";
 
-import "./App.css";
+import "./App.scss";
 
 import * as React from "react";
 //Crear rutas, es para moverse entre la app aunque sea SPA
@@ -35,10 +35,24 @@ function App() {
     });
 
   return (
-      <Router>
-        <Routes>{getRoutes(routes)}</Routes>
-      </Router>
-  
+    <div className="container">
+      <div className="navbar">
+        <img src={logo} className="logo" />{" "}
+        <div>
+          <div className="topNav">
+            <h2>Home</h2>
+            <h2>Menu</h2>
+            <h2>New</h2>
+            <h2>Contact</h2>
+          </div>
+        </div>
+      </div>
+      <div className="mainContent">
+        <Router>
+          <Routes>{getRoutes(routes)}</Routes>
+        </Router>
+      </div>
+    </div>
   );
 }
 export default App;
