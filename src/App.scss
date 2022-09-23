@@ -24,6 +24,7 @@ body{
         margin-left: 40px;
         color:#333;
         font-weight: 400;
+        font-size: 20px;
        }
        img.logo{
         max-width: 80px;
@@ -39,5 +40,7 @@ body{
 }
 
 
+/* import bootstrap to set changes */
 
+@import "../node_modules/bootstrap/scss/bootstrap";
 
