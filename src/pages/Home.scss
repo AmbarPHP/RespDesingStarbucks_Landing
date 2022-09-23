@@ -28,6 +28,7 @@
 
     .textBox {
       max-width: 600px;
+      margin-left: 40px;
 
       a {
         margin-top: 20px;
@@ -98,7 +99,17 @@
 }
 
 .circle--pink {
-    background-color: #b63585;
+    background-color: #eb7495;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip-path: circle(600px at right 800px);
+    z-index: 1;
+  }
+  .circle--pink2 {
+    background-color: #d752b1;
     width: 100%;
     height: 100%;
     position: absolute;

@@ -1,8 +1,8 @@
 import Home from "./pages/Home";
-import Menu from "./pages/Menu";
+/* import Menu from "./pages/Menu";
 import New from "./pages/New";
-import Contact from "./pages/Contact";
-import logo from "./assets/logo.png";
+import Contact from "./pages/Contact";*/
+import logo from "./assets/logo.png"; 
 
 import "./App.scss";
 
@@ -12,11 +12,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const routes = [
-    { path: "/", component: <Home /> },
-    { path: "/home", component: <Home /> },
-    { path: "/menu", component: <Menu /> },
-    { path: "/new", component: <New /> },
-    { path: "/contact", component: <Contact /> },
+    { path: "/", component: <Home/> },
+    { path: "/home", component: <Home/> },
+  /*   { path: "/menu", component: <Menu/> },
+    { path: "/new", component: <New/> },
+    { path: "/contact", component: <Contact/> }, */
   ];
 
   const getRoutes = (allRoutes) =>

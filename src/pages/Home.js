@@ -13,16 +13,37 @@ import { useState } from "react";
 
 
 function Home() {
-    
-    const[imgsrc,setImgsrc]=useState(img1);
+    const circuleTrans=[{
+        img:img1,
+        backgroudColor:'circle--green'
+    },
+    {
+        img:img2,
+        backgroudColor:'circle--pink'
+    },
+    {
+        img:img3,
+        backgroudColor:'circle--pink2'
+    },
+    ];
+
+    console.log("src",circuleTrans[0].img);
+
+    const[imgsrc,setImgsrc]=useState(circuleTrans[0].img); 
+  
     //TODO: COMO PONER EL BEM EN LOS ESTILOS
     //TODO crear un objeto que una im y background
-    const[backgroudColor,setBackgroudColor]=useState('circle--green');
+    const[backgroudColor,setBackgroudColor]=useState(circuleTrans[0].backgroudColor);
 
     function ChangeSource(src){
         console.log("src",src);
-        setImgsrc(src);
-        setBackgroudColor('circle--pink');
+        const result= circuleTrans.find((item)=>{
+            
+           return  item.img===src;
+        });
+        console.log(result);
+        setImgsrc(result.img);
+        setBackgroudColor(result.backgroudColor);
     }
   return (
     <div>
