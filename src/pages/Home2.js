@@ -49,24 +49,20 @@ function Home() {
   }
   return (
     <Fragment>
-        <div className="header">
-      <div className="togle"></div>
+      <div className="header">
+        <div className="togle"> </div>
         <img src={logo} className="logo" />{" "}
-        <div>
-          <div className="topNav">
-            <h2>Home</h2>
-            <h2>Menu</h2>
-            <h2>New</h2>
-            <h2>Contact</h2>
-          </div>
+        <div className="topNav">
+          <h2>Home</h2>
+          <h2>Menu</h2>
+          <h2>New</h2>
+          <h2>Contact</h2>
         </div>
       </div>
       <div className="section">
-      <div className={backgroudColor}></div>
-      
+        <div className={backgroudColor}></div>
 
-      <div className="content__left">
-    
+        <div className="content__left">
           <div className="textBox">
             <h2>
               It´s no just Coffee
@@ -82,13 +78,13 @@ function Home() {
             </p>
             <a href="#">Learn More</a>
           </div>
-    
-        <div className="thumb">
-          <img src={img1} alt="beberage" onClick={() => ChangeSource(img1)} />
-          <img src={img2} alt="beberage" onClick={() => ChangeSource(img2)} />
-          <img src={img3} alt="beberage" onClick={() => ChangeSource(img3)} />
+
+          <div className="thumb">
+            <img src={img1} alt="beberage" onClick={() => ChangeSource(img1)} />
+            <img src={img2} alt="beberage" onClick={() => ChangeSource(img2)} />
+            <img src={img3} alt="beberage" onClick={() => ChangeSource(img3)} />
+          </div>
         </div>
-      </div>
 
         <div className="content_right">
           <img src={imgsrc} alt="" className="starbucks" />
@@ -99,10 +95,8 @@ function Home() {
           <img src={instagram} alt="social" />
           <img src={twitter} alt="social" />
         </div>
-      
-    </div>
+      </div>
     </Fragment>
-    
   );
 }
 
