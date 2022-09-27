@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import "./Home2.scss";
 import img2 from "../assets/62115-tea-coffee.png";
@@ -48,9 +48,8 @@ function Home() {
     setBackgroudColor(result.backgroudColor);
   }
   return (
-    <div className="section">
-      <div className={backgroudColor}></div>
-      <div className="header">
+    <Fragment>
+        <div className="header">
       <div className="togle"></div>
         <img src={logo} className="logo" />{" "}
         <div>
@@ -62,6 +61,9 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="section">
+      <div className={backgroudColor}></div>
+      
 
       <div className="content__left">
     
@@ -99,6 +101,8 @@ function Home() {
         </div>
       
     </div>
+    </Fragment>
+    
   );
 }
 
