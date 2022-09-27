@@ -12,35 +12,31 @@ body {
   padding: 0px 21px;
   align-content: center;
 
+  .NavBar {
+    width: 90%;
+    display: flex;
+    padding-right: 61px;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+
+    h2 {
+      margin-left: 40px;
+      color: #333 !important;
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .logo {
+        justify-content: flex-start;
+        max-width: 60px;
+        height: 60px;
+      }
+  }
+ 
   .togle {
     width: 10%;
     justify-content: flex-start;
   }
-  .topNav {
-   
-  width: 90%;
-  display: flex;
-
-  padding-right: 61px;
-  flex-direction: row;
-  justify-content: flex-end;
-  h2 {
-    margin-left: 40px;
-    color: #333 !important;
-    font-weight: 400;
-    font-size: 20px;
-  }
-  img.logo {
-    max-width: 80px;
-  }
-}
-  .logo {
-    justify-content: flex-start;
-    
-    max-width: 60px;
-    height: 60px;
-  }
-
 }
 .section {
   display: flex;
@@ -163,26 +159,25 @@ body {
 }
 
 @media (max-width: 991px) {
-    .header {
-        .topNav {
-          h2 {
-            display: none;
-          }
-        }
-        .togle {
-            background-color: blue;
-            position: absolute;
+  .header {
+    .NavBar {
+      h2 {
+        display: none;
+      }
+    }
+    .togle {
+      background-color: blue;
+      /*   position: absolute;
             width: 30px;
             height: 30px;
-            left: 0;
-            cursor: pointer;
-            background: url("../assets/menu.png"); 
-            background-size: 30px;
-            /* filter: invert(1); */
-      
-          }
-      }
-      
+            left: 0; */
+      cursor: pointer;
+      background-position: center;
+      background: url("../assets/menu.png");
+      background-size: 30px;
+      /* filter: invert(1); */
+    }
+  }
 
   .section {
     display: flex;
@@ -226,7 +221,6 @@ body {
           cursor: pointer;
           transition: 0.5s;
           margin: 0px 10px;
-          
         }
       }
     }
@@ -235,7 +229,7 @@ body {
       display: flex;
       justify-content: center;
       z-index: 100;
-     /*  position: absolute;
+      /*  position: absolute;
       top: 383px;
       margin: 10%; */
       img {

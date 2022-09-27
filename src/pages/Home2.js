@@ -52,7 +52,7 @@ function Home() {
       <div className="header">
         <div className="togle"> </div>
         <img src={logo} className="logo" />{" "}
-        <div className="topNav">
+        <div className="NavBar">
           <h2>Home</h2>
           <h2>Menu</h2>
           <h2>New</h2>
