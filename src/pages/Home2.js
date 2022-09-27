@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Home.scss";
+import "./Home2.scss";
 import img2 from "../assets/62115-tea-coffee.png";
 import img1 from "../assets/matcha-white.png";
 import img3 from "../assets/62120-starbucks-unicorn.png";
@@ -49,8 +49,9 @@ function Home() {
   }
   return (
     <div className="section">
-      <div className="togle"></div>
+      <div className={backgroudColor}></div>
       <div className="header">
+      <div className="togle"></div>
         <img src={logo} className="logo" />{" "}
         <div>
           <div className="topNav">
@@ -62,9 +63,8 @@ function Home() {
         </div>
       </div>
 
-      <div className={backgroudColor}></div>
-      <div className="content__main">
-        <div className="description">
+      <div className="content__left">
+    
           <div className="textBox">
             <h2>
               It´s no just Coffee
@@ -80,14 +80,15 @@ function Home() {
             </p>
             <a href="#">Learn More</a>
           </div>
-        </div>
+    
         <div className="thumb">
           <img src={img1} alt="beberage" onClick={() => ChangeSource(img1)} />
           <img src={img2} alt="beberage" onClick={() => ChangeSource(img2)} />
           <img src={img3} alt="beberage" onClick={() => ChangeSource(img3)} />
         </div>
+      </div>
 
-        <div className="imgBox ">
+        <div className="content_right">
           <img src={imgsrc} alt="" className="starbucks" />
         </div>
 
@@ -96,7 +97,7 @@ function Home() {
           <img src={instagram} alt="social" />
           <img src={twitter} alt="social" />
         </div>
-      </div>
+      
     </div>
   );
 }
